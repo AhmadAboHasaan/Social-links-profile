@@ -1,0 +1,108 @@
+:root {
+    --main-color: black;
+    --componant-color: #1f1f1f;
+    --links-background-color: #333333;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    background-color: var(--main-color);
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.componant {
+    width: 300px;
+    height: 475px;
+    padding: 12px;
+    background: var(--componant-color);
+    position: relative;
+    border: 2px solid;
+    border-radius: 5%;
+}
+
+.componant .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 270px;
+    height: 420px;
+    top: 15px;
+}
+
+.componant .avatar {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.componant .name {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.componant .locatin {
+    color: #c1dd6c;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.componant .filed-of-exp {
+    font-size: 10px;
+    font-weight: lighter;
+    padding-top: 20px;
+    color: #d5d5d5;
+}
+
+.componant .soucal-links {
+    padding-top: 10px;
+}
+
+.componant .soucal-links span {
+    display: block;
+    width: 225px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5%;
+    background: #333333;
+    color: white ;
+}
+
+.componant .soucal-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.componant .soucal-links span:hover {
+    background: #c4f82a;
+}
+
+.componant .soucal-links span:hover a {
+    color: #000;
+}
